@@ -1,0 +1,170 @@
+{
+    "name": "add_spreadsheet_row",
+    "description": "Adds a row to a spreadsheet with all the information about the injury",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "body_part": {
+                "type": "string",
+                "description": "The body part that is injured"
+            },
+            "injury_type": {
+                "type": "string",
+                "description": "The type of injury"
+            },
+            "mild_description": {
+                "type": "string",
+                "description": "The description of the injury when it is mild"
+            },
+            "moderate_description": {
+                "type": "string",
+                "description": "The description of the injury when it is moderate"
+            },
+            "severe_description": {
+                "type": "string",
+                "description": "The description of the injury when it is severe"
+            },
+            "subcategories": {
+                "type": "string",
+                "description": "The subcategories of the injury"
+            },
+            "description": {
+                "type": "string",
+                "description": "The description of the injury"
+            },
+            "mild_min_healing_duration": {
+                "type": "string",
+                "description": "The minimum healing duration of the injury when it is mild"
+            },
+            "mild_max_healing_duration": {
+                "type": "string",
+                "description": "The maximum healing duration of the injury when it is mild"
+            },
+            "moderate_min_healing_duration": {
+                "type": "string",
+                "description": "The minimum healing duration of the injury when it is moderate"
+            },
+            "moderate_max_healing_duration": {
+                "type": "string",
+                "description": "The maximum healing duration of the injury when it is moderate"
+            },
+            "severe_min_healing_duration": {
+                "type": "string",
+                "description": "The minimum healing duration of the injury when it is severe"
+            },
+            "severe_max_healing_duration": {
+                "type": "string",
+                "description": "The maximum healing duration of the injury when it is severe"
+            },
+            "self_recovery": {
+                "type": "string",
+                "description": "The self recovery of the injury"
+            },
+            "symptoms": {
+                "type": "string",
+                "description": "The symptoms of the injury"
+            },
+            "immediate_remedies": {
+                "type": "string",
+                "description": "The immediate remedies of the injury"
+            },
+            "when_to_see_doctor": {
+                "type": "string",
+                "description": "When to see a doctor for the injury"
+            },
+            "mild_min_pain_level": {
+                "type": "string",
+                "description": "The minimum pain level of the injury when it is mild"
+            },
+            "moderate_avg_pain_level": {
+                "type": "string",
+                "description": "The average pain level of the injury when it is moderate"
+            },
+            "severe_max_pain_level": {
+                "type": "string",
+                "description": "The maximum pain level of the injury when it is severe"
+            },
+            "common_causes": {
+                "type": "string",
+                "description": "The common causes of the injury"
+            },
+            "risk_factors": {
+                "type": "string",
+                "description": "The risk factors of the injury"
+            },
+            "treatment_types": {
+                "type": "string",
+                "description": "The treatment types of the injury"
+            },
+            "treatment_side_effects": {
+                "type": "string",
+                "description": "The treatment side effects of the injury"
+            },
+            "physiotherapy_exercises": {
+                "type": "string",
+                "description": "The physiotherapy exercises of the injury"
+            },
+            "long_term_remedies": {
+                "type": "string",
+                "description": "The long term remedies of the injury"
+            },
+            "potential_chronic_injuries": {
+                "type": "string",
+                "description": "The potential chronic injuries of the injury"
+            },
+            "specific_body_part": {
+                "type": "string",
+                "description": "The specific body part of the injury"
+            },
+            "complications": {
+                "type": "string",
+                "description": "The complications of the injury"
+            },
+            "diagnosis_methods": {
+                "type": "string",
+                "description": "The diagnosis methods of the injury"
+            },
+            "how_common": {
+                "type": "string",
+                "description": "How common the injury is"
+            },
+            "recovery_rate": {
+                "type": "string",
+                "description": "The recovery rate of the injury"
+            },
+            "professional_help_frequency": {
+                "type": "string",
+                "description": "The frequency of professional help for the injury"
+            },
+            "home_treatment_expectation": {
+                "type": "string",
+                "description": "The home treatment expectation of the injury"
+            },
+            "doctor_recommendation": {
+                "type": "string",
+                "description": "The doctor recommendation of the injury"
+            },
+            "surgery_requirement": {
+                "type": "string",
+                "description": "The surgery requirement of the injury"
+            },
+            "lowering_risk": {
+                "type": "string",
+                "description": "The lowering risk of the injury"
+            },
+            "treatment_goals": {
+                "type": "string",
+                "description": "The treatment goals of the injury"
+            },
+            "prevention_measures": {
+                "type": "string",
+                "description": "The prevention measures of the injury"
+            },
+            "initial_and_delayed_symptoms": {
+                "type": "string",
+                "description": "The initial and delayed symptoms of the injury"
+            }
+        },
+        "required": ["body_part", "injury_type", "mild_description", "moderate_description", "severe_description", "subcategories", "description", "mild_min_healing_duration", "mild_max_healing_duration", "moderate_min_healing_duration", "moderate_max_healing_duration", "severe_min_healing_duration", "severe_max_healing_duration", "self_recovery", "symptoms", "immediate_remedies", "when_to_see_doctor", "mild_min_pain_level", "moderate_avg_pain_level", "severe_max_pain_level", "common_causes", "risk_factors", "treatment_types", "treatment_side_effects", "physiotherapy_exercises", "long_term_remedies", "potential_chronic_injuries", "specific_body_part", "complications", "diagnosis_methods", "how_common", "recovery_rate", "professional_help_frequency", "home_treatment_expectation", "doctor_recommendation", "surgery_requirement", "lowering_risk", "treatment_goals", "prevention_measures", "initial_and_delayed_symptoms"]
+    }
+}
