@@ -1,12 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import StyledButton from "../components/StyledButton";
 
 export default function HomeScreen({ navigation }) 
 {
     return <View style={styles.container}>
         <Text>Welcome to Rhythmo AI!</Text>
-        <Button 
-            title="Let's Go"
+        <StyledButton 
+            label="Let's Go"
             onPress={() => navigation.navigate("Login")}
         />
     </View>

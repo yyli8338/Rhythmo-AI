@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Button, TextInput } from "react-native";
 import React, { useState } from "react";
+import StyledButton from "../components/StyledButton";
 
 export default function LoginScreen({ navigation }) {
     const [email, setEmail] = useState("");
@@ -26,9 +27,9 @@ export default function LoginScreen({ navigation }) {
                 secureTextEntry={true}
             />
 
-            <Button
-                title="Login"
-                onPress={() => navigation.navigate("Login")}
+            <StyledButton
+                label="Login"
+                onPress={() => navigation.navigate("Diagnosis")}
             />
         </View>
     );
@@ -44,8 +45,8 @@ const styles = StyleSheet.create({
     input: {
         height: 40,
         margin: 12,
-        borderWidth: 1,
         padding: 10,
         width: "80%",
+        borderBottomWidth: 1,
     },
 });

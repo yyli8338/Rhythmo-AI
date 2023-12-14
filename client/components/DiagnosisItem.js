@@ -2,23 +2,25 @@ import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import colours from '../config/colours';
 
-export default function StyledButton(props) 
+export default function DiagnosisItem(props) 
 {
-    const { label, onPress } = props;
+    const { id, name, description, severity, onPress } = props;
 
     return <TouchableOpacity onPress={onPress}>
         <View style={styles.container} >
-            <Text style={styles.text}>{label}</Text>
+            <Text numberOfLines={2} style={styles.text}>{id}. {name} - {severity}</Text>
+            <Text numberOfLines={2} style={styles.text}>{description}</Text>
         </View>
     </TouchableOpacity>
 }; 
 
 const styles = StyleSheet.create({
     container: {
-        width: 120, 
-        height: 40, 
+        width: "100%", 
+        height: 80, 
+        padding: 20,
         backgroundColor: colours.primary,
-        alignItems: "center",
+        // alignItems: "center",
         justifyContent: "center",
         borderRadius: 10,
     },
