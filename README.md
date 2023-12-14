@@ -1,1 +1,1 @@
-# rythmo-ai
+# Rhythmo-AI
