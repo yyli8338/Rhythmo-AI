@@ -30,7 +30,7 @@ specific_body_part: Run along the outer ankle bone and side of the foot. These t
 complications: Increase the risk of tendon breaking down or tearing; chronic tendonitis (a constant, dull pain when you move); difficulty or inability to move the affected part of your body; torn tendons; muscle weakness 
 diagnosis_methods: Physical exam by assing whether there are bursitis (inflammation) and testing - X ray, MRI 
 how_common: Around 30% of all runners exhibit Achilles tendinopathy, with an annual incidence of 7% to 9%; 2 to 5% of the general population have tendonitis 
-What is the recovery rate: Almost 99% cases recover completely without surgery. Almost 95% of cases recover after surgery. 
+recovery_rate: Almost 99% cases recover completely without surgery. Almost 95% of cases recover after surgery. 
 professional_help_frequency: About 30% of all healthcare visits for musculoskeletal conditions affect the tendon, including tendonitis 
 home_treatment_expectation: PRICE method; avoid doing things that increase pain/swelling; take NSAIDs; coritcosteroid injections, physio 
 doctor_recommendation: PRICE program; short course of aspirin, ibuprofen, or other anti-inflammatory drugs 
@@ -72,7 +72,7 @@ specific_body_part: Shoulder. When the tendon is torn away from the bone
 complications: Permanent loss of motion or weakness of the shoulder joint
 diagnosis_methods: Imaging tests. X-ray helps to rule out bone spurs as a cause of symptoms. MRI enables doctor to see the soft tissue in the shoulder to determine if rotator cuff tear and whether it is partial or full thickness
 how_common: More than 2 million Americans experience some type of rotator cuff problem every year. Affects 2-4 million people in the US every year 
-What is the recovery rate: Rotator cuff surgery success rate is more than 95% for minor tears; success rate is greater than 70% for two tendon tears
+recovery_rate: Rotator cuff surgery success rate is more than 95% for minor tears; success rate is greater than 70% for two tendon tears
 professional_help_frequency: Each year, almost 2 million people in the US visit their doctors because of rotator cuff tears. 
 home_treatment_expectation: Pain from minor rotator cuff injury often diminishes on its own with proper care. But most rotator tears don't heal without surgery
 doctor_recommendation: Rest, ice and physical therapy; surgery
@@ -116,7 +116,7 @@ specific_body_part: Strain or tear to the tendons or large muscles at the back o
 complications: Chronic hamstring pain and injury associated with too early return to play; reinjury related to areas of calcification and inflammation in hamstring after injury; hamstring syndrome - scar formation and impingement on the sciatic nerve
 diagnosis_methods: Based on symptoms. Test tenderness and examine swelling and brusising around hamstring. Somestimes may ask for MRI test
 how_common: Hamstring pulls are the most common non-contact injury representing 27% of all muscle traumas in professional sports 
-What is the recovery rate: A hamstring injury takes an average 20 days to revoer from with a 30% chance of re-injury in the first two months
+recovery_rate: A hamstring injury takes an average 20 days to revoer from with a 30% chance of re-injury in the first two months
 professional_help_frequency: Hamstring pulls occur very frequntly in athletes
 home_treatment_expectation: Most treatments can be done at home
 doctor_recommendation: Take a break to rest hamstring muscles that allow the damaged tissues to repair; avoid activities that cause pain, swelling or discomfort. If you have more than a minor muscle strain, your health care provider may recommend that you use crutches to keep your weight off the injured leg. Ice
