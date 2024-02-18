@@ -1,37 +1,54 @@
-Which body part is your injury located? : Ankle 
+Q: Which body part is your injury located? 
+A: Ankle 
 
-Is that body part also where you experience the most pain? : Yes
+Q: Is that body part also where you experience the most pain? 
+A: Yes
 
-If not, please write down in the chatbox below, which location on the body this would be: : N/A
+Q: If not, please write down in the chatbox below, which location on the body this would be. 
+A: N/A
+Q: What does the pain feel like? 
+A: Stabbing; sore 
 
-What does the pain feel like? : Stabbing; sore 
+Q: How often do you feel the pain? 
+A: Every 1-2 days
 
-How often do you feel the pain? : Every 1-2 days
+Q: Is there a particular time of day the pain is more intense? 
+A: No 
 
-Is there a particular time of day the pain is more intense? : No 
+Q: If yes, please write down in the chatbox below, when in the day this would be. 
+A: N/A
+Q: For how long does the pain bother you? 
+A: Around 5-10 minutes 
 
-If yes, please write down in the chatbox below, when in the day this would be: : N/A
+Q: On a scale of 1 to 10, how bad does the injury hurt? 
+A: 4.0 
 
-For how long does the pain bother you? : Around 5-10 minutes 
+Q: What are the symptoms you're experiencing? 
+A: Sudden pain; swelling and bruising; not being able to place weight on ankle; weakness
 
-On a scale of 1 to 10, how bad does the injury hurt? : 4.0
+Q: Are there any movements here that you can't do? 
+A: Jumping
 
-What are the symptoms you're experiencing? : Sudden pain; swelling and bruising; not being able to place weight on ankle; weakness
+Q: Did you hear any sound such as a tear, rip, snap, or pop? 
+A: Yes
 
-Are there any movements here that you can't do? : Jumping
+Q: If yes, please specify.
+A: Snap
 
-Did you hear any sound such as a tear, rip, snap, or pop?: Yes
+Q: Are you experiencing any tingling or numbness anywhere in your body? 
+A: No
 
-If yes, please specify which in the chatbox below: : Snap
+Q: If yes, please specify. 
+A: N/A
 
-Are you experiencing any tingling or numbness anywhere in your body?: No
+Q: Does it just hurt to touch? 
+A: No
 
-If yes, please specify where on the body in the chatbox below: : N/A
+Q: Is it more painful while sitting or standing? 
+A: Standing 
 
-Does it just hurt to touch? : No
+Q: Are you able to run? 
+A: No
 
-Is it more painful while sitting or standing? : Standing 
-
-Are you able to run?: No
-
-Chat box: Please mention the injuries causal factors, how long  the injury has been sustained for, and what recreational or occupational activities do you do: : My right ankle was injured from gaelic footabll in P.E class. I was running, and twisted my ankle whilst my body fell to the ground. I continued to participate in badminton training, netball matches, and dance. The injury has been sustained for around 2 weeks now. 
+Q: Please mention the injuries causal factors, how long the injury has been sustained for, and what recreational or occupational activities do you do.
+A: My right ankle was injured from gaelic footabll in P.E class. I was running, and twisted my ankle whilst my body fell to the ground. I continued to participate in badminton training, netball matches, and dance. The injury has been sustained for around 2 weeks now. 

@@ -1,0 +1,3 @@
+Injury 1: Ankle Sprain
+Injury 2: Ligament Tear
+Injury 3: Tendonitis

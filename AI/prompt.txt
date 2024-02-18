@@ -1,0 +1,14 @@
+Take on the role of a professional doctor and physiologist. Your task is to create an initial diagnosis for a sports injury experienced by a patient. 
+
+The patient's injury is in their <<BODY_PART>>. Below are a list of potential sports injuries that could occur in this area.
+
+You must output exactly three most likely injuries that the patient has experienced from the most likely to the least likely. Do not output anything else. Here is an example output: 
+Injury 1: Ankle Tendonitis
+Injury 2: Ankle Sprain
+Injury 3: Ankle Plantar Fasciitis
+
+Here is additional info provided by the patient when discussing with the intake nurse:
+<<PATIENT_INFO>>
+
+Here is a list of potential injuries that could occur in the <<BODY_PART>>:
+<<INJURIES>>
