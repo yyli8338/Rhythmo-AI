@@ -2,6 +2,7 @@ import { StyleSheet, View, Text, TextInput, TouchableOpacity, Image } from 'reac
 import React, { useState } from "react";
 import TransparentStyledButton from "../components/TransparentStyledButton";
 import colours from '../config/colours';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 export default function LoginScreen({ navigation }) {
     const [email, setEmail] = useState("");
@@ -24,23 +25,29 @@ export default function LoginScreen({ navigation }) {
             </View>
 
             <View style={styles.bottomContainer}>
-                <TextInput
-                    style={styles.input}
-                    onChangeText={setEmail}
-                    value={email}
-                    placeholder="Email"
-                    keyboardType="email-address"
-                    autoCapitalize="none"
-                />
+                <View style={styles.inputContainer}>
+                    <Icon name="mail" size={24} color={colours.grey2} style={styles.inputIcon} />
+                    <TextInput
+                        style={styles.input}
+                        onChangeText={setEmail}
+                        value={email}
+                        placeholder="Email"
+                        keyboardType="email-address"
+                        autoCapitalize="none"
+                    />
+                </View>
 
-                <TextInput
-                    style={styles.input}
-                    onChangeText={setPassword}
-                    value={password}
-                    placeholder="Password"
-                    secureTextEntry={true}
-                />
-                
+                <View style={styles.inputContainer}>
+                    <Icon name="key" size={24} color={colours.grey2} style={styles.inputIcon} />
+                    <TextInput
+                        style={styles.input}
+                        onChangeText={setPassword}
+                        value={password}
+                        placeholder="Password"
+                        secureTextEntry={true}
+                    />
+                </View>
+
                 <TouchableOpacity style={styles.forgotPasswordContainer}>
                     <Text style={styles.linkText}>Forgot Password?</Text>
                 </TouchableOpacity>
@@ -53,7 +60,6 @@ export default function LoginScreen({ navigation }) {
                 /> 
 
                 <Text style={styles.signupText}>Don't have an account? <Text style={styles.linkText}>Sign up</Text></Text>
-                
             </View>
         </View>
     );
@@ -66,11 +72,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
     },
-    topContainer: 
-    {
+    topContainer: {
         backgroundColor: colours.primary,
         // background image from ../assets/background.png
-        
+
         width: "100%",
         height: "40%",
         display: "flex",
@@ -80,9 +85,8 @@ const styles = StyleSheet.create({
     titleContainer: {
         paddingHorizontal: 30,
         paddingVertical: 50,
-    },  
-    backgroundImage: 
-    {
+    },
+    backgroundImage: {
         position: "absolute",
         top: 0,
         left: 0,
@@ -90,23 +94,20 @@ const styles = StyleSheet.create({
         width: "100%",
         height: "100%",
     },
-    title: 
-    {
+    title: {
         color: colours.white,
         fontSize: 45,
         fontWeight: "700",
         fontFamily: "Helvetica Neue",
     },
-    instructionText: 
-    {
+    instructionText: {
         color: colours.secondary,
         fontSize: 20,
         fontWeight: "500",
         fontFamily: "Helvetica Neue",
         marginTop: 10,
-    },  
-    logo: 
-    {
+    },
+    logo: {
         color: colours.white,
         fontSize: 50,
         fontWeight: "700",
@@ -115,47 +116,53 @@ const styles = StyleSheet.create({
         top: "20%",
         right: "10%",
     },
-    bottomContainer: 
-    {
+    bottomContainer: {
         backgroundColor: colours.white,
         width: "80%",
         height: "60%",
-        display: "flex", 
+        display: "flex",
         alignItems: "center",
         justifyContent: "center",
         gap: 20,
         paddingVertical: 50,
     },
-    input: {
+    inputContainer: {
+        flexDirection: "row",
+        alignItems: "center",
         height: 70,
         width: "100%",
         backgroundColor: colours.grey1,
         borderRadius: 100,
         paddingHorizontal: 20,
+        borderWidth: 1,
+        borderColor: colours.grey2,
+        marginBottom: 20,
+    },
+    inputIcon: {
+        marginRight: 10,
+    },
+    input: {
         fontFamily: "Helvetica Neue",
         fontSize: 20,
         fontWeight: "700",
         color: colours.grey2,
-        borderWidth: 1,
-        borderColor: colours.grey2,
+        flex: 1,
     },
-    forgotPasswordContainer: 
-    {
+    forgotPasswordContainer: {
         width: "100%",
-    },  
+    },
     linkText: {
         color: colours.primary,
         textAlign: "right",
         marginBottom: 20,
-        textDecorationLine: 'underline',
+        textDecorationLine: "underline",
         fontSize: 15,
         fontWeight: "500",
     },
-    signupText: 
-    {
+    signupText: {
         color: colours.secondary,
         fontSize: 15,
         fontWeight: "500",
-        fontFamily: "Helvetica Neue"
-    }
+        fontFamily: "Helvetica Neue",
+    },
 });
