@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
         fontFamily: "Helvetica Neue",
     },
     instructionText: {
-        color: colours.secondary,
+        color: colours.secondary1,
         fontSize: 20,
         fontWeight: "500",
         fontFamily: "Helvetica Neue",
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
         fontWeight: "500",
     },
     signupText: {
-        color: colours.secondary,
+        color: colours.secondary2,
         fontSize: 15,
         fontWeight: "500",
         fontFamily: "Helvetica Neue",
