@@ -14,7 +14,7 @@ export default function StyledButton(props)
 const styles = StyleSheet.create({
     container: {
         backgroundColor: "rgba(255, 255, 255, 1)",
-        width: 290,
+        width: 250,
         height: 68,
         justifyContent: "center",
         alignItems: "center",

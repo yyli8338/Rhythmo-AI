@@ -7,6 +7,7 @@ import {
     Text,
     ImageBackground,
 } from "react-native";
+import colours from "../config/colours";
 
 export default function HomeScreen({ navigation }) {
     return (
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
         gap: 25,
     },
     title: {
-        color: "rgba(255, 255, 255, 1)",
+        color: colours.white,
         fontSize: 80,
         fontWeight: "700",
         fontFamily: "Helvetica Neue",
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
         top: "27%",
     },
     slogan: {
-        color: "rgba(255, 255, 255, 1)",
+        color: colours.white,
         fontSize: 20,
         fontWeight: "700",
         fontFamily: "Helvetica Neue",
