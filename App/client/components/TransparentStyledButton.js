@@ -13,7 +13,8 @@ export default function StyledButton(props)
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "rgba(255, 255, 255, 1)",
+        borderWidth: 1.5,
+        borderColor: colours.white,
         width: 290,
         height: 68,
         justifyContent: "center",
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
         borderRadius: "100%",
     },
     text: {
-        color: colours.primary,
+        color: colours.white,
         fontSize: 20,
         fontWeight: "700",
         fontFamily: "Helvetica Neue",
