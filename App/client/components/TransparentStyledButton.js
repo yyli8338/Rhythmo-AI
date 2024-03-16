@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     container: {
         borderWidth: 1,
         width: 250,
-        height: 68,
+        height: 60,
         justifyContent: "center",
         alignItems: "center",
         borderRadius: 100, // Changed from "100%" to 100 for React Native compatibility

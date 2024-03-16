@@ -4,28 +4,52 @@ import TransparentStyledButton from "../components/TransparentStyledButton";
 import colours from '../config/colours';
 import Icon from 'react-native-vector-icons/AntDesign';
 
-export default function LoginScreen({ navigation }) {
+export default function SignupScreen({ navigation }) 
+{
+    const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
 
     const handleLogin = async() => {
+        if (username.length === 0) {
+            alert("Please enter a username");
+            return;
+        }
+
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert("Please enter a valid email address");
             return;
         }
 
-        if (password.length === 0) {
-            alert("Please enter a password");
+        if (password.length < 8) {
+            alert("Password must be at least 8 characters long");
             return;
         }
 
-        const response = await fetch("http://127.0.0.1:3001/api/user/login", {
+        if (password === password.toLowerCase()) {
+            alert("Password must include at least one capital letter");
+            return;
+        }
+
+        const hasNumber = /\d/;
+        if (!hasNumber.test(password)) {
+            alert("Password must include at least one number");
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match");
+            return;
+        }
+
+        const response = await fetch("http://127.0.0.1:3001/api/user/new", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ email, password }),
+            body: JSON.stringify({ username, email, password }),
         });
 
         const data = await response.json();
@@ -50,12 +74,22 @@ export default function LoginScreen({ navigation }) {
                 />
                 <Text style={styles.logo}>R</Text>
                 <View style={styles.titleContainer}>
-                    <Text style={styles.title}>Login</Text>
-                    <Text style={styles.instructionText}>Please sign in to continue</Text>
+                    <Text style={styles.title}>Sign Up</Text>
+                    <Text style={styles.instructionText}>Please register to continue</Text>
                 </View>
             </View>
 
             <View style={styles.bottomContainer}>
+                <View style={styles.inputContainer}>
+                    <Icon name="user" size={24} color={colours.grey2} style={styles.inputIcon} />
+                    <TextInput
+                        style={styles.input}
+                        onChangeText={setUsername}
+                        value={username}
+                        placeholder="Username"
+                    />
+                </View>
+
                 <View style={styles.inputContainer}>
                     <Icon name="mail" size={24} color={colours.grey2} style={styles.inputIcon} />
                     <TextInput
@@ -79,18 +113,25 @@ export default function LoginScreen({ navigation }) {
                     />
                 </View>
 
-                <TouchableOpacity style={styles.forgotPasswordContainer}>
-                    <Text style={styles.linkText}>Forgot Password?</Text>
-                </TouchableOpacity>
+                <View style={styles.inputContainer}>
+                    <Icon name="key" size={24} color={colours.grey2} style={styles.inputIcon} />
+                    <TextInput
+                        style={styles.input}
+                        onChangeText={setConfirmPassword}
+                        value={confirmPassword}
+                        placeholder="Confirm Password"
+                        secureTextEntry={true}
+                    />
+                </View>
 
                 <TransparentStyledButton
-                    label="Login"
+                    label="Sign Up"
                     onPress={handleLogin}
                     borderColour={colours.black}
                     textColour={colours.primary}
                 /> 
 
-                <Text style={styles.signupText}>Don't have an account? <Text style={styles.linkText} onPress={() => navigation.navigate("Signup")}>Sign up</Text></Text>
+                <Text style={styles.loginText}>Already have an account? <Text style={styles.linkText} onPress={() => navigation.navigate ("Login")}>Log in</Text></Text>
             </View>
         </View>
     );
@@ -152,13 +193,13 @@ const styles = StyleSheet.create({
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        gap: 20,
         paddingVertical: 50,
+        gap: 5,
     },
     inputContainer: {
         flexDirection: "row",
         alignItems: "center",
-        height: 70,
+        height: 60,
         width: "100%",
         backgroundColor: colours.grey1,
         borderRadius: 100,
@@ -188,10 +229,11 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: "500",
     },
-    signupText: {
+    loginText: {
         color: colours.secondary2,
         fontSize: 15,
         fontWeight: "500",
         fontFamily: "Helvetica Neue",
+        marginTop: 10,
     },
 });

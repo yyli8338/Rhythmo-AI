@@ -44,15 +44,15 @@ const login = async (req, res) =>
 {
     try
     {
-        const { username, password } = req.body; 
+        const { email, password } = req.body; 
 
-        if (!username || !password)
-            return res.status (400).json ({ status: "ERROR", message: "Username and password are required" })
+        if (!email || !password)
+            return res.status (400).json ({ status: "ERROR", message: "Email and password are required" })
 
-        const user = await userModel.findOne({ username }); 
+        const user = await userModel.findOne({ email }); 
 
         if (!user || !(await user.comparePassword(password)))
-            return res.status(404).json({ status: "ERROR", message: "Username or password incorrect" }); 
+            return res.status(404).json({ status: "ERROR", message: "Email or password incorrect" }); 
 
         req.session.userId = user._id;
 

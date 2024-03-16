@@ -22,7 +22,7 @@ export default function HomeScreen({ navigation }) {
                 />
                 <TransparentStyledButton
                     label="Create Account"
-                    onPress={() => navigation.navigate("Login")}
+                    onPress={() => navigation.navigate("Signup")}
                 />
             </View>
             <Text style={styles.title}>Rhythmo</Text>
