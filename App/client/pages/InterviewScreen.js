@@ -4,16 +4,36 @@ import React, { useState } from "react";
 import colours from '../config/colours';
 import Icon from 'react-native-vector-icons/AntDesign';
 
+import { Dropdown } from 'react-native-element-dropdown';
 import DashboardItem from '../components/DashboardItem';
 import TransparentStyledButton from "../components/TransparentStyledButton";
 import StyledButton from '../components/StyledButton';
+import DropdownComponent from '../components/DropdownComponent';
 
-export default function DashboardScreen({ navigation, route }) {
-    const { username } = route.params;
+const data = [
+    { label: "Ankle", value: "Ankle" },
+    { label: "Knee", value: "Knee" },
+    { label: "Shin", value: "Shin" },
+    { label: "Foot", value: "Foot" },
+    { label: "Thigh", value: "Thigh" },
+    { label: "Hand", value: "Hand" },
+    { label: "Wrist", value: "Wrist" },
+    { label: "Shoulder", value: "Shoulder" },
+    { label: "Hip", value: "Hip" },
+    { label: "Back", value: "Back" },
+    { label: "Groin", value: "Groin" },
+    { label: "Neck", value: "Neck" },
+    { label: "Elbow", value: "Elbow" },
+    { label: "Chest", value: "Chest" },
+    { label: "Head", value: "Head" },
+    { label: "Face", value: "Face" }
+];
 
-    const handleNewInjury = () => 
+export default function InterviewScreen({ navigation }) {
+
+    const handleNextQuestion = () => 
     {
-        navigation.navigate("Interview");
+
     }
 
     return (
@@ -28,65 +48,20 @@ export default function DashboardScreen({ navigation, route }) {
                 <Text style={styles.logo}>R</Text>
                 <View style={styles.titleContainer}>
                     <Text style={styles.title}>Rhythmo AI</Text>
-                    <Text style={styles.instructionText}>Welcome, {username}!</Text>
+                    <Text style={styles.instructionText}>Please answer the following questions to help us diagnose your injury.</Text>
                 </View>
             </View>
 
             <View style={styles.bottomContainer}>
-                <ScrollView style={styles.scrollView}>
-                    <DashboardItem
-                        id={0}
-                        name="In Progress"
-                        date="16/3/24"
-                        onPress={() => {}}
-                    />
-                    <DashboardItem
-                        id={1}
-                        name="Ankle Pain"
-                        date="14/3/24"
-                        onPress={() => {}}
-                    />
-                    <DashboardItem
-                        id={2}
-                        name="Ankle Pain"
-                        date="14/3/24"
-                        onPress={() => {}}
-                    />
-                    <DashboardItem
-                        id={3}
-                        name="Ankle Pain"
-                        date="14/3/24"
-                        onPress={() => {}}
-                    />
-                    <DashboardItem
-                        id={4}
-                        name="Ankle Pain"
-                        date="14/3/24"
-                        onPress={() => {}}
-                    />
-                    <DashboardItem
-                        id={5}
-                        name="Ankle Pain"
-                        date="14/3/24"
-                        onPress={() => {}}
-                    />
-                    <DashboardItem
-                        id={6}
-                        name="Ankle Pain"
-                        date="14/3/24"
-                        onPress={() => {}}
-                    />
-                    <DashboardItem
-                        id={7}
-                        name="Ankle Pain"
-                        date="14/3/24"
-                        onPress={() => {}}
-                    />
-                </ScrollView>
+                <View style={{ width: "100%" }}>
+                    <Text style={styles.questionText}>Which body part is injured? (1/16)</Text>
 
+                    <DropdownComponent data={data} labelText={"Body Part"} />
+                </View>
+                
                 <TransparentStyledButton
-                    label="New Injury"
-                    onPress={handleNewInjury}
+                    label="Next"
+                    onPress={handleNextQuestion}
                     borderColour={colours.black}
                     textColour={colours.primary}
                 /> 
@@ -150,12 +125,14 @@ const styles = StyleSheet.create({
         height: "60%",
         display: "flex",
         alignItems: "center",
-        justifyContent: "flex-start",
+        justifyContent: "space-between",
         gap: 20,
         paddingVertical: 30,
+        paddingBottom: 80,
     },
-    scrollView: {
-        // backgroundColor: colours.grey1,
-        borderRadius: 10,
-    }
+    questionText: {
+        fontSize: 20,
+        fontWeight: "500",
+        marginBottom: 20,
+    },
 });
