@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     inputIcon: {
-        marginRight: 10,
+        marginRight: 15,
     },
     input: {
         fontFamily: "Helvetica Neue",
