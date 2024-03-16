@@ -56,7 +56,7 @@ export default function SignupScreen({ navigation })
 
         if (data.status === "SUCCESS") {
             alert("Success!");
-            navigation.navigate("Diagnosis");
+            navigation.navigate("Dashboard", { username: data.user.username });
         }
         else {
             alert(data.message);
